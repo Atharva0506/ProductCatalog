@@ -1,0 +1,48 @@
+.products_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2.5rem;
+
+}
+.products_item{
+    background: var(--color-primary);
+    padding: 1.2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+
+}
+.products_item:hover{
+    border-color:var(--color-primary-variant) ;
+    background: transparent;
+}
+
+.products_img img{
+    border-radius: 1.5rem;
+}
+.products_item > h3 {
+    margin: 1.2rem 0 2rem;
+}
+.products_item-cta{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* ============== media tabets ================= */
+
+@media only screen and (max-width: 1024px) {
+.products_container{
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+}
+
+/* ================== media phone Small Devacie ================= */
+
+@media only screen and (max-width: 600px) {
+.products_container{
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+}
