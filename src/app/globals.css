@@ -16,7 +16,7 @@
     --color-bg-variant: #2c2c6c;
     --color-primary: #4db5ff;
     --color-primary-variant: rgba(77, 181, 255, 0.4);
-   --color-black: #fff;
+    --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
 
     --container-width-1g: 75%;
@@ -38,10 +38,9 @@ body {
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url('/images/bg-texture.png');
 }
 
-/* =========== CSS ============  */
+
 
 .container {
     width: var(--container-width-1g);
@@ -55,6 +54,7 @@ h3,
 h4,
 h5 {
     font-weight: 500;
+    color: var(--color-white);
 }
 
 h1 {

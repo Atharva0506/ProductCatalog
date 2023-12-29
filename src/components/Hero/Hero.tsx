@@ -6,7 +6,7 @@ function Hero() {
       <div className="hero-content">
         <h1>Welcome to Our Product Catalog</h1>
         <p>Discover a wide range of high-quality products at affordable prices.</p>
-        <a href="#" className="btn btn-primary">Buy Now</a>
+        <a href="#Products" className="btn btn-primary">Buy Now</a>
       </div>
   
 

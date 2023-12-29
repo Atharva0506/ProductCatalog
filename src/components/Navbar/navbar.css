@@ -24,7 +24,7 @@
   .logo {
     padding: 1rem;
     margin: 0;
-    color: #cd5ff8;
+    color: var(--color-white);
     font-size: 1.5em; 
     font-weight: bold;
   }
@@ -33,6 +33,7 @@
     cursor: pointer;
     width: 10%;
     display: flex;
+    color: var(--color-white);
     font-size: 1.3rem;
     margin: 1rem;
     justify-content: space-evenly;
