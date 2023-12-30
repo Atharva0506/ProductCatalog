@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useEffect, useState } from 'react';
+import {useShoppingCart} from '@/context/ShoppingCartContext'
 import products from '@/product.json';
 import Image from 'next/image';
 import './ProductCatalog.css';
@@ -16,6 +17,7 @@ export interface ProductCatalog {
 }
 
 function ProductCatalog() {
+  const { addToCart } = useShoppingCart();
   const [categoryData, setCategoryData] = useState<string[]>([]);
   const [filteredProducts, setFilteredProducts] = useState<ProductCatalog[]>(products);
 
@@ -68,11 +70,12 @@ function ProductCatalog() {
       </div>
       <div className='container products_container'>
         {filteredProducts.map((product) => (
-          <Link key={product.id} href={`/products/${product.id}`}>
-          <div className='product-card' >
+          <div className='product-card' key={product.id} >
+            <Link  href={`/products/${product.id}`}>
             <div className='product-tumb'>
               <img src={product.image} alt={product.name}    />
             </div>
+            </Link>
             <div className='product-details'>
               <span className='product-catagory'>{product.category}</span>
               <h4>
@@ -81,15 +84,13 @@ function ProductCatalog() {
               
               <div className='product-bottom-details'>
                 <div className='product-price'>₹{product.price}</div>
-                <div className='product-links'>
-                
-                <IoCart />
-              
+                <div className='product-links' >
+                  <span onClick={() => addToCart(product)}><IoCart /></span>
                 </div>
               </div>
             </div>
           </div>
-          </Link>
+         
         ))}
       </div>
     </section>
