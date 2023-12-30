@@ -1,0 +1,71 @@
+.card-container {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: var(--color-bg);
+  }
+  
+  .card {
+    display: flex;
+    background-color: var(--color-white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 100%;
+    width: 80%; 
+    border: 2px solid var(--color-primary); 
+  }
+  
+  .img {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .img img:hover {
+    transform: scale(1.1);
+  }
+  
+  .info {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .qty {
+    margin-top: 8px;
+  }
+  
+  .foot {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color var(--transition);
+  }
+  
+  button:hover {
+    background-color: var(--color-primary-variant);
+  }
+  
+  h1, p, h2 {
+    color: var(--color-primary); /* Set text color to primary color */
+  }

@@ -1,10 +1,11 @@
 "use client"
-// ProductCatalog.tsx
 
 import React, { useEffect, useState } from 'react';
 import products from '@/product.json';
+import Image from 'next/image';
 import './ProductCatalog.css';
 import { IoCart } from 'react-icons/io5';
+import Link from 'next/link';
 
 export interface ProductCatalog {
   id: number;
@@ -67,26 +68,28 @@ function ProductCatalog() {
       </div>
       <div className='container products_container'>
         {filteredProducts.map((product) => (
-          <div className='product-card' key={product.id}>
+          <Link key={product.id} href={`/products/${product.id}`}>
+          <div className='product-card' >
             <div className='product-tumb'>
-              <img src={product.image} alt='' />
+              <img src={product.image} alt={product.name}    />
             </div>
             <div className='product-details'>
               <span className='product-catagory'>{product.category}</span>
               <h4>
-                <a href=''>{product.name}</a>
+                {product.name}
               </h4>
               
               <div className='product-bottom-details'>
                 <div className='product-price'>₹{product.price}</div>
                 <div className='product-links'>
-                <a href='#' >
+                
                 <IoCart />
-              </a>
+              
                 </div>
               </div>
             </div>
           </div>
+          </Link>
         ))}
       </div>
     </section>
