@@ -1,9 +1,7 @@
 "use client"
-
 import React, { useEffect, useState } from 'react';
 import {useShoppingCart} from '@/context/ShoppingCartContext'
 import products from '@/product.json';
-import Image from 'next/image';
 import './ProductCatalog.css';
 import { IoCart } from 'react-icons/io5';
 import Link from 'next/link';

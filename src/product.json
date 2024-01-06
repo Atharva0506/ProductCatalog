@@ -1,31 +1,56 @@
 [
   {
     "id": 1,
-    "name": "braided-leather-belt-1",
-    "price": 19.99,
+    "name": "braided-leather-belt",
+    "price": 500,
     "image": "/images/products/braided-leather-belt-1.jpg",
     "category": "belt"
   },
   {
     "id": 2,
-    "name": "brooks-sunglasses-1",
-    "price": 29.99,
+    "name": "brooks-sunglasses",
+    "price": 600,
     "image": "/images/products/brooks-sunglasses-1.jpg",
     "category": "sunglasses"
   },
   {
     "id": 3,
-    "name": "wool-scarf-2",
-    "price": 39.99,
-    "image": "/images/products/wool-scarf-2.jpg",
+    "name": "wool-scarf",
+    "price": 250,
+    "image": "/images/products/wool-scarf-1.jpg",
     "category": "scarf"
   },
   {
     "id": 4,
-    "name": "Product 4",
-    "price": 39.99,
-    "image": "/images/products/wool-scarf-1.jpg",
+    "name": "canvas-tote-bag",
+    "price": 500,
+    "image": "/images/products/canvas-tote-bag-1.jpg",
+    "category": "bag"
+  },{
+    "id": 5,
+    "name": "woolblend-suit-belt",
+    "price": 1000,
+    "image": "/images/products/woolblend-suit-belt-1.jpg",
+    "category": "belt"
+  },{
+    "id": 6,
+    "name": "tartan-scarf",
+    "price": 900,
+    "image": "/images/products/tartan-scarf-1.jpg",
     "category": "scarf"
+  },{
+    "id": 7,
+    "name": "dock-sunglasses",
+    "price": 800,
+    "image": "/images/products/dock-sunglasses-1.jpg",
+    "category": "sunglasses"
+  },
+  {
+    "id": 8,
+    "name": "khaki-tote-bag",
+    "price": 700,
+    "image": "/images/products/khaki-tote-bag-1.jpg",
+    "category": "bag"
   }
  
 ]

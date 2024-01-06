@@ -51,3 +51,8 @@
   .util p:hover{
     color: var(--color-primary);
   }
+  @media (max-width: 768px) {
+    .cart span{
+      display: none;
+    }
+  }

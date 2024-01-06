@@ -1,0 +1,86 @@
+.cart-items{
+  width: 100%;
+}
+.cart-main {
+  width: 100%;
+  max-width: var(--container-width-md);
+  margin: 0 auto;
+  background-color: var(--color-bg);
+  color: var(--color-white);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+table {
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-light);
+}
+
+th {
+  background-color: var(--color-bg-variant);
+  font-weight: bold;
+}
+
+td img {
+  width: 100px;
+  height: auto;
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.cart-main .btn {
+  background-color: var(--color-bg-variant);
+  border: none;
+  color: var(--color-white);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.cart-main .btn:hover {
+  background-color: var(--color-primary-variant);
+}
+
+.cart-main .btn-primary {
+  background-color: var(--color-primary);
+}
+.no-item{
+  width: 100%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  Thead{
+    display: none;
+  }
+  .cart table {
+    width: 100%;
+    overflow-x: auto;
+    table-layout: fixed; /* Ensure consistent column widths */
+  }
+
+  .cart th,
+  .cart td {
+    padding: 5px 10px; /* Reduce padding for smaller screens */
+    text-align: center; /* Align text center for better readability */
+  }
+
+  .cart td img {
+    width: 50px; /* Adjust image width */
+  }
+}

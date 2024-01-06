@@ -1,5 +1,7 @@
+
 import React from 'react'
 import "./Hero.css"
+import { useShoppingCart } from "@/context/ShoppingCartContext";
 function Hero() {
   return (
     <section className="hero">

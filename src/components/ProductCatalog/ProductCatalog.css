@@ -125,7 +125,8 @@
     text-align: right;
 }
 
-.product-links a {
+.product-links span {
+    cursor: pointer;
     display: inline-block;
     margin-left: 5px;
     color: var(--color-light);
