@@ -3,7 +3,7 @@ import { BrowserRouter,Route,Routes } from "react-router-dom";
 import Hero from "@/components/Hero/Hero";
 import Navbar from "@/components/Navbar/Navbar";
 import Catalog from "@/components/ProductCatalog/ProductCatalog";
-import Cart from "@/components/cart/page"
+import Cart from "@/components/cart/cart"
 import Footer from "@/components/Footer/Footer";
 import { ShoppingCartProvider } from "@/context/ShoppingCartContext";
 import { Toaster } from "react-hot-toast";

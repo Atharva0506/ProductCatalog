@@ -7,7 +7,7 @@ interface PageProps {
   params: { id: string };
 }
 
-const Page: FC<PageProps> = ({ params }: any) => {
+const Product: FC<PageProps> = ({ params }: any) => {
   const [product, setProduct] = useState<any>(null);
 
   useEffect(() => {
@@ -37,7 +37,6 @@ const Page: FC<PageProps> = ({ params }: any) => {
           <h1>{product.name}</h1>
           <p>{product.description}</p>
           <div className='qty'>
-            {/* Add your quantity functionality here */}
             +{1}-
           </div>
           <div className='foot'>
@@ -50,4 +49,4 @@ const Page: FC<PageProps> = ({ params }: any) => {
   );
 };
 
-export default Page;
+export default Product;
