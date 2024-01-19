@@ -1,7 +1,11 @@
 # Product Catalog
 
 This is a Next.js project that allows users to browse and buy products from different categories. It has features like displaying category wise items, add to cart, cart details, total items and their price total with GST.
-[!Project Video](/public/video/project-video.mp4)
+Project Video
+
+https://github.com/Atharva0506/ProductCatalog/assets/117357137/18946aae-e948-4696-844a-a3db26fc745c
+
+eo
 ## Installation
 
 To run this project, you need to have Node.js and npm installed on your machine. Then, clone this repository from GitHub:
